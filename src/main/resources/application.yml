@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: profiler-service
+  datasource:
+    url: jdbc:h2:mem:dcbapp
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    generate-ddl: true
+  h2:
+    console.enabled: true
+external:
+  service:
+    url: https://jsonplaceholder.typicode.com
